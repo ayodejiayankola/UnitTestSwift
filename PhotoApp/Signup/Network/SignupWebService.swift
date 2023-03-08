@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignupWebService {
+class SignupWebService: SignupWebServiceProtocol {
 	
 	// constructor based dependency injection
 	private var urlSession: URLSession
