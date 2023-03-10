@@ -103,7 +103,7 @@ final class SignupWebServiceTests: XCTestCase {
 		
 		// Act
 		sut.signup(withForm: signupFormRequestModel) { (signupResponseModel, error) in
-//
+    // Assert
 			XCTAssertEqual(error, SignupError.failedRequest(description: "The operation couldn’t be completed. (PhotoApp.SignupError error 0.)"), "The signup() method did not return an expected erorr for the failed request ")
 //			XCTAssertEqual(error, SignupError.failedRequest(description: errorDescription))
 //			XCTAssertEqual(error?.localizedDescription, errorDescription)
@@ -111,7 +111,7 @@ final class SignupWebServiceTests: XCTestCase {
 			expectation.fulfill()
 		}
 		
-		// Assert
+		
 		self.wait(for: [expectation], timeout: 2)
 	}
 }

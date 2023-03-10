@@ -6,30 +6,68 @@
 //
 
 import XCTest
+@testable import PhotoApp
 
 final class SignupViewControllerTests: XCTestCase {
-
-    override func setUpWithError() throws {
+	var storyboard: UIStoryboard!
+	var sut : SignupViewController!
+	
+	override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+			storyboard = UIStoryboard(name: "Main", bundle: nil)
+			sut = storyboard.instantiateViewController(identifier: "SignupViewController") as? SignupViewController
+			sut?.loadViewIfNeeded()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+	override func tearDownWithError() throws {
+		// Put teardown code here. This method is called after the invocation of each test method in the class.
+		storyboard = nil
+		sut = nil
+	}
+	
+	func testSignupViewController_WhenCreated_HasRequiredTextFieldsEmpty() throws {
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+		// To check if the iboutlet textfield is not connected
+		// Act
+		let firstNameTextField = try XCTUnwrap(sut.firstNameTextField, "The first name Text Field is not connected to an IBoutlet")
+		let lastNameTextField = try XCTUnwrap(sut.lastNameTextField, "The last name Text Field is not connected to an IBoutlet")
+		let emailTextField = try XCTUnwrap(sut.emailTextField, "Email Text Field is not connected to an IBoutlet")
+		let passwordTextField = try XCTUnwrap(sut.passwordTextField, "PasswordText Field is not connected to an IBoutlet")
+		let repeatPasswordTextField = try! XCTUnwrap(sut.repeatPasswordTextField, "Repeat Password Text Field is not connected to an IBoutlet")
+		
+		// Assert
+		
+		XCTAssertEqual(firstNameTextField.text, "", "First name text field was not empty when view controller initially loaded")
+		XCTAssertEqual(lastNameTextField.text, "", "Last name text field was not empty when view controller initially loaded")
+		XCTAssertEqual(emailTextField.text, "", "Email text field was not empty when view controller initially loaded")
+		XCTAssertEqual(passwordTextField.text, "", "Password text field was not empty when view controller initially loaded")
+		XCTAssertEqual(repeatPasswordTextField.text, "", "Repeat password text field was not empty when view controller initially loaded")
+	}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+	
+	func testSignupViewController_WhenCreated_HasSignupButtonAndAction() throws {
+		let signupButton: UIButton = try XCTUnwrap(sut.signupButton, "Signup Button does not having a referencing outlet")
+		let signupButtonActions = try XCTUnwrap(signupButton.actions(forTarget: sut, forControlEvent: .touchUpInside), "Signup Button does not have any action assigned to it")
+		XCTAssertEqual(signupButtonActions.count, 1)
+		XCTAssertEqual(signupButtonActions.first, 	"signupButtonTapped:", "There is no action with name signupButtonTapped assigned to sinup button ")
+	}
+	
+	func testSignupViewController_WhenSignupButtonTapped_InvokeSignupProcess() {
+		// Arrange
+	 let mockSignpModelValidator = MockSignupModelValidator()
+		let mockSignupWebService = MockSignupWebService()
+		let mockSignupViewDelegate = MockSignupViewDelegate()
+		
+		
+		
+		let mockSignupPresenter = MockSignupPresenter(formModelValidator: mockSignpModelValidator, webService: mockSignupWebService, delegate: mockSignupViewDelegate)
+		
+		// Act
+		sut.signupPresenter = mockSignupPresenter
+		sut.signupButton.sendActions(for: .touchUpInside)
+		// Assert
+		XCTAssertTrue(mockSignupPresenter.processUserSignupCalled, "The processUserSignup() method was not called on a presenter object when the signup button was tapped in  a signupViewController")
+		
+		
+	}
 }
