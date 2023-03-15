@@ -35,7 +35,7 @@ class SignupViewController: UIViewController {
     
 	@IBAction func signupButtonTapped(_ sender: Any) {
 		let signupFormModel = SignupFormModel(firstName: firstNameTextField.text ?? "", lastName: lastNameTextField.text ?? "", email: emailTextField.text ?? "", password: passwordTextField.text ?? "", repeatPassword: repeatPasswordTextField.text ?? "")
-		signupPresenter?.processUserSignup(formModel: signupFormModel)
+ 		signupPresenter?.processUserSignup(formModel: signupFormModel)
 		
 	}
 	

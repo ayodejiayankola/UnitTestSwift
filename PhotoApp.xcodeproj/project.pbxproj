@@ -15,6 +15,11 @@
 		3509593E29B7EE82005F98AD /* SignupViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509593D29B7EE82005F98AD /* SignupViewControllerTests.swift */; };
 		3509594029B7EF0E005F98AD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509593F29B7EF0E005F98AD /* SignupViewController.swift */; };
 		351146A2299FA626006D7BAA /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351146A1299FA626006D7BAA /* MockURLProtocol.swift */; };
+		3523E5B729C0B8AE000C39D0 /* XIBBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523E5B529C0B8AE000C39D0 /* XIBBasedViewController.swift */; };
+		3523E5B829C0B8AE000C39D0 /* XIBBasedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3523E5B629C0B8AE000C39D0 /* XIBBasedViewController.xib */; };
+		3523E5BB29C0B8F0000C39D0 /* LoadingViewControllerWithXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523E5BA29C0B8F0000C39D0 /* LoadingViewControllerWithXIB.swift */; };
+		3523E5BE29C0BBC4000C39D0 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523E5BD29C0BBC4000C39D0 /* HomePageViewController.swift */; };
+		3523E5C129C0BD8E000C39D0 /* HomePageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3523E5C029C0BD8E000C39D0 /* HomePageViewControllerTests.swift */; };
 		35379AE829891BA60062C329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35379AE729891BA60062C329 /* AppDelegate.swift */; };
 		35379AEA29891BA60062C329 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35379AE929891BA60062C329 /* SceneDelegate.swift */; };
 		35379AEF29891BA60062C329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35379AED29891BA60062C329 /* Main.storyboard */; };
@@ -55,6 +60,11 @@
 		3509593D29B7EE82005F98AD /* SignupViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewControllerTests.swift; sourceTree = "<group>"; };
 		3509593F29B7EF0E005F98AD /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		351146A1299FA626006D7BAA /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		3523E5B529C0B8AE000C39D0 /* XIBBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBBasedViewController.swift; sourceTree = "<group>"; };
+		3523E5B629C0B8AE000C39D0 /* XIBBasedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBBasedViewController.xib; sourceTree = "<group>"; };
+		3523E5BA29C0B8F0000C39D0 /* LoadingViewControllerWithXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewControllerWithXIB.swift; sourceTree = "<group>"; };
+		3523E5BD29C0BBC4000C39D0 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		3523E5C029C0BD8E000C39D0 /* HomePageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewControllerTests.swift; sourceTree = "<group>"; };
 		35379AE429891BA60062C329 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35379AE729891BA60062C329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35379AE929891BA60062C329 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +115,39 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		3523E5B429C0B889000C39D0 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				3523E5B529C0B8AE000C39D0 /* XIBBasedViewController.swift */,
+				3523E5B629C0B8AE000C39D0 /* XIBBasedViewController.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		3523E5B929C0B8C9000C39D0 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				3523E5BA29C0B8F0000C39D0 /* LoadingViewControllerWithXIB.swift */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		3523E5BC29C0BBA9000C39D0 /* Programmatic */ = {
+			isa = PBXGroup;
+			children = (
+				3523E5BD29C0BBC4000C39D0 /* HomePageViewController.swift */,
+			);
+			path = Programmatic;
+			sourceTree = "<group>";
+		};
+		3523E5BF29C0BD53000C39D0 /* Programatic */ = {
+			isa = PBXGroup;
+			children = (
+				3523E5C029C0BD8E000C39D0 /* HomePageViewControllerTests.swift */,
+			);
+			path = Programatic;
+			sourceTree = "<group>";
+		};
 		35379ADB29891BA60062C329 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +169,8 @@
 		35379AE629891BA60062C329 /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				3523E5BC29C0BBA9000C39D0 /* Programmatic */,
+				3523E5B429C0B889000C39D0 /* XIB */,
 				3579DC82299E57B000148249 /* Signup */,
 				35379AE729891BA60062C329 /* AppDelegate.swift */,
 				35379AE929891BA60062C329 /* SceneDelegate.swift */,
@@ -140,6 +185,8 @@
 		35379B0029891BD30062C329 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				3523E5BF29C0BD53000C39D0 /* Programatic */,
+				3523E5B929C0B8C9000C39D0 /* XIB */,
 				3579DC86299E586600148249 /* Signup */,
 			);
 			path = PhotoAppTests;
@@ -335,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3523E5B829C0B8AE000C39D0 /* XIBBasedViewController.xib in Resources */,
 				35379AF429891BAA0062C329 /* LaunchScreen.storyboard in Resources */,
 				35379AF129891BAA0062C329 /* Assets.xcassets in Resources */,
 				35379AEF29891BA60062C329 /* Main.storyboard in Resources */,
@@ -358,11 +406,13 @@
 				35006FB929BB712D005A514B /* SignupPresenterProtocol.swift in Sources */,
 				35AC05DF29A773BD0004FFEE /* SignupPresenter.swift in Sources */,
 				35379AE829891BA60062C329 /* AppDelegate.swift in Sources */,
+				3523E5BE29C0BBC4000C39D0 /* HomePageViewController.swift in Sources */,
 				3579DC7F299E55E500148249 /* SignupResponseModel.swift in Sources */,
 				35BF8BAA29916E4A00BD1B20 /* SignupFormModelValidator.swift in Sources */,
 				3579DC81299E576000148249 /* SignupError.swift in Sources */,
 				35FB28F429B39D2500FE9368 /* SignupViewDelegateProtocol.swift in Sources */,
 				35AC05DD29A772810004FFEE /* SignupFormModel.swift in Sources */,
+				3523E5B729C0B8AE000C39D0 /* XIBBasedViewController.swift in Sources */,
 				3597BACE2992A3D4002BC926 /* SignupConstants.swift in Sources */,
 				35FBCA5929AEB67000CD42AA /* SignupModelValidatorProtocol.swift in Sources */,
 				35059ED7299BE06E009CA11D /* SignupFormRequestModel.swift in Sources */,
@@ -380,9 +430,11 @@
 				35006FB729BB703B005A514B /* MockSignupPresenter.swift in Sources */,
 				35FB28E329B1526E00FE9368 /* MockSignupWebService.swift in Sources */,
 				351146A2299FA626006D7BAA /* MockURLProtocol.swift in Sources */,
+				3523E5BB29C0B8F0000C39D0 /* LoadingViewControllerWithXIB.swift in Sources */,
 				3509593E29B7EE82005F98AD /* SignupViewControllerTests.swift in Sources */,
 				35059ED3299BD8AE009CA11D /* SignupWebServiceTests.swift in Sources */,
 				35AC05DB29A770F70004FFEE /* SignupPresentersTests.swift in Sources */,
+				3523E5C129C0BD8E000C39D0 /* HomePageViewControllerTests.swift in Sources */,
 				35AC05E129A7779D0004FFEE /* MockSignupModelValidator.swift in Sources */,
 				35BF8BA829916CC900BD1B20 /* SignupFormModelValidatorTests.swift in Sources */,
 				35FB28F229B39C7D00FE9368 /* MockSignupViewDelegate.swift in Sources */,
