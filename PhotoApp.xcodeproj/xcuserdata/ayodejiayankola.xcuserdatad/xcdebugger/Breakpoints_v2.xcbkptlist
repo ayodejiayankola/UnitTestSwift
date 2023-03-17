@@ -448,86 +448,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F3015657-C4EE-44C7-BC4F-6D3EB67E4532"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Controllers/SignupViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E2DFC12C-7203-4B1F-A8EC-3ADFA50E6FCD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Controllers/SignupViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "signupButtonTapped(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "484BAB35-C616-48A1-9972-8A9FF64856F6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PhotoApp/Signup/Controllers/SignupViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "signupButtonTapped(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "484BAB35-C616-48A1-9972-8A9FF64856F6 - c4e989865b322a39"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhotoApp.SignupViewController.signupButtonTapped(Any) -&gt; ()"
-                  moduleName = "PhotoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ayodejiayankola/Desktop/Study/PhotoApp/PhotoApp/Signup/Controllers/SignupViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "95">
-               </Location>
-               <Location
-                  uuid = "484BAB35-C616-48A1-9972-8A9FF64856F6 - c4e989865b322a39"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PhotoApp.SignupViewController.signupButtonTapped(Any) -&gt; ()"
-                  moduleName = "PhotoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ayodejiayankola/Desktop/Study/PhotoApp/PhotoApp/Signup/Controllers/SignupViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "2382">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "47E3B555-1B25-4A5A-851D-C8FA273BB61D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -538,6 +458,54 @@
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "processUserSignup(formModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C8EB00D-5E74-483C-BA24-89521F772B7B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoApp/Signup/Models/ThrowErorrFromModelValidator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "isMiddleNameValid(middleName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "080964F1-222A-44BF-AE0B-F9AE8AF47BBF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoApp/Signup/Models/ThrowErorrFromModelValidator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "isMiddleNameValid(middleName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "734C056D-F58F-406C-9464-794675A6A0D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoApp/Signup/Models/ThrowErorrFromModelValidator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "isMiddleNameValid(middleName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
