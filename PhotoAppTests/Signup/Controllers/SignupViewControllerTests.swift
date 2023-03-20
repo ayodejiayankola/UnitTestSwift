@@ -70,4 +70,22 @@ final class SignupViewControllerTests: XCTestCase {
 		
 		
 	}
+	
+	func testSignupViewController_WhenEmailTestFieldCreated_HasEmailAddressContentTypeSet() throws {
+		let emailTextField = try XCTUnwrap(sut.emailTextField, "EmailAddress UITextField not connected")
+		XCTAssertEqual(emailTextField.textContentType, .emailAddress, "Email Address UITextField does not have an email address content type set ")
+	}
+	
+	
+	func testSignupViewController_WhenEmailTestFieldCreated_HasEmailAddressKeyboardTypeSet() throws {
+		let emailTextField = try XCTUnwrap(sut.emailTextField, "EmailAddress UITextField not connected")
+		XCTAssertEqual(emailTextField.keyboardType, .emailAddress, "Email Address UITextField does not have an email address keyboard type set ")
+	}
+	
+	func testSignupViewController_WhePasswordTestFieldCreated_HasSecureTextEntry() throws {
+		let passwordTextField = try XCTUnwrap(sut.passwordTextField, "Password UITextField not connected")
+//		XCTAssertEqual(passwordTextField.isSecureTextEntry, "true", "Password UITextField does not have an is secure text entry equals to true")
+		XCTAssertTrue(passwordTextField.isSecureTextEntry, "Password UITextField does not have an is secure text entry equals to true")
+	}
+	
 }
