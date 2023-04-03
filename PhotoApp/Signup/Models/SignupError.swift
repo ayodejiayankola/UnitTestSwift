@@ -12,6 +12,11 @@ enum SignupError: LocalizedError, Equatable {
 		case invalidResponseModel
 		case invalidRequestURLString
 	  case illegalCharactersFound
+	case isInvalidFirstName
+	case isInvalidLastName
+	case isInvalidEmail
+	case isInvalidPassword
+	case passwordsDoNotMatch
 		case failedRequest(description: String)
 		
 		var errorDescription: String? {
@@ -20,6 +25,16 @@ enum SignupError: LocalizedError, Equatable {
 						return description
 				case .invalidResponseModel, .invalidRequestURLString, .illegalCharactersFound:
 						return ""
+				case .isInvalidFirstName:
+					return ""
+				case .isInvalidLastName:
+					return ""
+				case .isInvalidEmail:
+					return ""
+				case .isInvalidPassword:
+					return ""
+				case .passwordsDoNotMatch:
+					return ""
 				}
 		}
 		

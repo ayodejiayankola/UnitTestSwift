@@ -19,14 +19,16 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="iyi-aG-3MI">
                                 <rect key="frame" x="30" y="99" width="333" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="firstNameTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="TOs-9g-Dmq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="namePhonePad" textContentType="name"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTt-Uo-TWn">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTt-Uo-TWn">
                                 <rect key="frame" x="30" y="159" width="333" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="lastNameTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aIw-UZ-ITP"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="jvl-rz-UuO"/>
@@ -34,8 +36,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="m8d-fB-Pxy">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="m8d-fB-Pxy">
                                 <rect key="frame" x="30" y="219" width="333" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="6W3-Am-CUT"/>
                                     <constraint firstAttribute="height" constant="40" id="U3v-ha-o3q"/>
@@ -43,17 +46,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3Hj-M5-yk2">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="3Hj-M5-yk2">
                                 <rect key="frame" x="30" y="279" width="333" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="password"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="J5r-Ix-uvo"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="s9x-qR-GYo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rcr-vW-KA4">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rcr-vW-KA4">
                                 <rect key="frame" x="30" y="339" width="333" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="repeatPassword"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="K4F-fW-Iwp"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="KpF-Eb-xaN"/>
@@ -63,6 +68,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-nW-E3S">
                                 <rect key="frame" x="30" y="409" width="333" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="signupButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="KTq-b6-1H0"/>
                                 </constraints>
@@ -109,10 +115,104 @@
             </objects>
             <point key="canvasLocation" x="-770" y="-3"/>
         </scene>
+        <!--First View Controller-->
+        <scene sceneID="Iq4-kS-eb3">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="RkG-tD-BNH" customClass="FirstViewController" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mvZ-x2-FcU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkp-gY-IdQ">
+                                <rect key="frame" x="137" y="424" width="119" height="35"/>
+                                <accessibility key="accessibilityConfiguration" identifier="CreateAccountButton"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next Screen"/>
+                                <connections>
+                                    <action selector="nextViewButtonTapped:" destination="RkG-tD-BNH" eventType="touchUpInside" id="q1r-q3-Uez"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Fe-Tr-Ta9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bkp-gY-IdQ" firstAttribute="leading" secondItem="8Fe-Tr-Ta9" secondAttribute="leading" constant="137" id="CKA-4i-4OJ"/>
+                            <constraint firstItem="bkp-gY-IdQ" firstAttribute="centerX" secondItem="mvZ-x2-FcU" secondAttribute="centerX" id="iCC-3d-9X7"/>
+                            <constraint firstItem="bkp-gY-IdQ" firstAttribute="top" secondItem="8Fe-Tr-Ta9" secondAttribute="top" constant="321" id="tGq-bA-YHg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zpe-Mp-b12"/>
+                    <connections>
+                        <outlet property="nextViewButton" destination="bkp-gY-IdQ" id="qfn-jc-Vla"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tuS-28-OUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588.5496183206105" y="-70.422535211267615"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="fKH-i6-OlE">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="hHj-R9-WJD" customClass="SecondViewController" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="svc-k8-LdW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtq-NU-BKf">
+                                <rect key="frame" x="75" y="384" width="243" height="84"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Back">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goBackAction:" destination="hHj-R9-WJD" eventType="touchUpInside" id="UmB-hb-MPv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lst-dS-XAr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xtq-NU-BKf" firstAttribute="centerY" secondItem="svc-k8-LdW" secondAttribute="centerY" id="0N6-Wh-he1"/>
+                            <constraint firstItem="xtq-NU-BKf" firstAttribute="centerX" secondItem="svc-k8-LdW" secondAttribute="centerX" id="3Pq-XA-en5"/>
+                            <constraint firstItem="xtq-NU-BKf" firstAttribute="top" secondItem="lst-dS-XAr" secondAttribute="top" constant="325" id="Dx9-lU-MQr"/>
+                            <constraint firstItem="xtq-NU-BKf" firstAttribute="leading" secondItem="lst-dS-XAr" secondAttribute="leading" constant="75" id="em4-2q-uTy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goBackButton" destination="xtq-NU-BKf" id="2YI-PZ-vn9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Cr-p1-z78" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2603.8167938931297" y="-92.253521126760575"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hcd-fH-7Os">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bn2-XR-qfB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2rx-Fz-wpj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RkG-tD-BNH" kind="relationship" relationship="rootViewController" id="bia-4E-S5e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbe-hM-Msb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="69"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
