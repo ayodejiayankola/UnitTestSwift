@@ -24,6 +24,10 @@ final class SignupFlowUITests: XCTestCase {
 			try super.setUpWithError()
 			
 			app = XCUIApplication()
+		 	app.launchArguments = ["-skipSurvey","-debugServer"]
+			app.launchEnvironment = ["signupUrl":"https:stageurl",
+															 "inAppPurchase":"true",
+															 "inAppAdsEnabled": "true"]
 			
 			app.launch()
 			// using accessibility
@@ -128,7 +132,7 @@ final class SignupFlowUITests: XCTestCase {
 		
 
 		let currentAppWindow = XCUIScreen.main.screenshot()
-		let currentAppWindow = app.screenshot()
+//		let currentAppWindow = app.screenshot()
 		let currentAppWindowAttachment = XCTAttachment(screenshot: currentAppWindow)
 		currentAppWindowAttachment.name = "Signup page screenshot"
 		currentAppWindowAttachment.lifetime = .keepAlways
