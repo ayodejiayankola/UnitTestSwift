@@ -25,9 +25,9 @@ final class SignupFlowUITests: XCTestCase {
 			
 			app = XCUIApplication()
 		 	app.launchArguments = ["-skipSurvey","-debugServer"]
-			app.launchEnvironment = ["signupUrl":"https:stageurl",
-															 "inAppPurchase":"true",
-															 "inAppAdsEnabled": "true"]
+//			app.launchEnvironment = ["signupUrl":"https:stageurl",
+//															 "inAppPurchase":"true",
+//															 "inAppAdsEnabled": "true"]
 			
 			app.launch()
 			// using accessibility

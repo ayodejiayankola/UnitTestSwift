@@ -1,0 +1,47 @@
+{
+  "configurations" : [
+    {
+      "id" : "AF707F9C-D07A-4EB0-A7B0-5C4260EBCD20",
+      "name" : "Test Server 2 URL",
+      "options" : {
+        "environmentVariableEntries" : [
+          {
+            "key" : "SignupURL",
+            "value" : "https:\/\/test.com"
+          }
+        ],
+        "region" : ""
+      }
+    },
+    {
+      "id" : "9ADD3A6A-8B6C-4761-8F35-AD8AAAD56F1A",
+      "name" : "Test Server 1 URL",
+      "options" : {
+        "environmentVariableEntries" : [
+          {
+            "key" : "signupURL",
+            "value" : "https:\/\/live.com"
+          }
+        ]
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PhotoApp.xcodeproj",
+      "identifier" : "35379AE329891BA60062C329",
+      "name" : "PhotoApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PhotoApp.xcodeproj",
+        "identifier" : "35982F3629CB6CC1003765D2",
+        "name" : "PhotoAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

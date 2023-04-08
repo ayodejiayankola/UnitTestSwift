@@ -90,6 +90,9 @@
 		35379AF329891BAA0062C329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35379AF529891BAA0062C329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35379AFF29891BD30062C329 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		354376B129E1925800ED0F2C /* PhotoApp-UITestsPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UITestsPlan.xctestplan"; sourceTree = "<group>"; };
+		354376B329E1983500ED0F2C /* PhotoApp-UnitTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-UnitTests.xctestplan"; sourceTree = "<group>"; };
+		354376B429E198C700ED0F2C /* PhotoApp-MainTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "PhotoApp-MainTestPlan.xctestplan"; sourceTree = "<group>"; };
 		3579DC7E299E55E500148249 /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
 		3579DC80299E576000148249 /* SignupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupError.swift; sourceTree = "<group>"; };
 		3597BACD2992A3D3002BC926 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
@@ -188,6 +191,7 @@
 		35379ADB29891BA60062C329 = {
 			isa = PBXGroup;
 			children = (
+				354376B429E198C700ED0F2C /* PhotoApp-MainTestPlan.xctestplan */,
 				35379AE629891BA60062C329 /* PhotoApp */,
 				35379B0029891BD30062C329 /* PhotoAppTests */,
 				35982F3829CB6CC1003765D2 /* PhotoAppUITests */,
@@ -224,6 +228,7 @@
 		35379B0029891BD30062C329 /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				354376B329E1983500ED0F2C /* PhotoApp-UnitTests.xctestplan */,
 				3523E5BF29C0BD53000C39D0 /* Programatic */,
 				3523E5B929C0B8C9000C39D0 /* XIB */,
 				3579DC86299E586600148249 /* Signup */,
@@ -307,6 +312,7 @@
 		35982F3829CB6CC1003765D2 /* PhotoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				354376B129E1925800ED0F2C /* PhotoApp-UITestsPlan.xctestplan */,
 				35982F3929CB6CC1003765D2 /* SignupFlowUITests.swift */,
 				35982F3B29CB6CC1003765D2 /* PhotoAppUITestsLaunchTests.swift */,
 				35982F4229CB6DD5003765D2 /* LoginFlowUITests.swift */,
